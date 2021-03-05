@@ -51,6 +51,7 @@ class MainActivity : AppCompatActivity() {
                             counterState.value = counter++
                         }
                         override fun onFinish() {
+                            counter = 0
                             counterState.value = 0
                             Toast.makeText(
                                 this@MainActivity,
